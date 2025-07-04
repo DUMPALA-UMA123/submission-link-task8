@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Layout</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    
+    <style>
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; 
+        }
+        .navbar, .card, .footer {
+            border-radius: 0.75rem; 
+        }
+        .card {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px); 
+        }
+        .footer {
+            background-color: #343a40; 
+            color: white;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm m-3">
+        <div class="container-fluid">
+            <a class="navbar-brand font-bold text-lg" href="#">My Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="container my-5 flex-grow">
+        <h1 class="text-4xl font-extrabold text-center mb-5 text-gray-800">Latest Blog Posts</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            
+            <div class="col">
+                <div class="card h-100 p-4 rounded-xl">
+                    <img src="https://placehold.co/600x400/E0E7FF/4338CA?text=Blog+Image+1" class="card-img-top rounded-lg mb-3" alt="Blog Image 1">
+                    <div class="card-body flex flex-col justify-between">
+                        <h5 class="card-title text-2xl font-semibold text-gray-900 mb-2">Exploring New Horizons</h5>
+                        <p class="card-text text-gray-700 mb-4">Discover the hidden gems of the world and embark on an unforgettable journey through breathtaking landscapes and vibrant cultures.</p>
+                        <a href="#" class="btn btn-primary w-full rounded-md py-2 px-4 text-center text-white font-medium hover:bg-blue-700 transition duration-300">Read More</a>
+                    </div>
+                    <div class="card-footer bg-white border-t border-gray-200 pt-3 text-sm text-gray-500">
+                        <small>Published on July 4, 2025</small>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col">
+                <div class="card h-100 p-4 rounded-xl">
+                    <img src="https://placehold.co/600x400/D1FAE5/065F46?text=Blog+Image+2" class="card-img-top rounded-lg mb-3" alt="Blog Image 2">
+                    <div class="card-body flex flex-col justify-between">
+                        <h5 class="card-title text-2xl font-semibold text-gray-900 mb-2">The Art of Storytelling</h5>
+                        <p class="card-text text-gray-700 mb-4">Unravel the secrets of compelling narratives and learn how to craft stories that captivate your audience and leave a lasting impression.</p>
+                        <a href="#" class="btn btn-primary w-full rounded-md py-2 px-4 text-center text-white font-medium hover:bg-blue-700 transition duration-300">Read More</a>
+                    </div>
+                    <div class="card-footer bg-white border-t border-gray-200 pt-3 text-sm text-gray-500">
+                        <small>Published on July 3, 2025</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post Card 3 -->
+            <div class="col">
+                <div class="card h-100 p-4 rounded-xl">
+                    <img src="https://placehold.co/600x400/FFEFD5/E67E22?text=Blog+Image+3" class="card-img-top rounded-lg mb-3" alt="Blog Image 3">
+                    <div class="card-body flex flex-col justify-between">
+                        <h5 class="card-title text-2xl font-semibold text-gray-900 mb-2">Mastering Productivity</h5>
+                        <p class="card-text text-gray-700 mb-4">Boost your efficiency and achieve your goals with proven strategies and practical tips for time management and focus.</p>
+                        <a href="#" class="btn btn-primary w-full rounded-md py-2 px-4 text-center text-white font-medium hover:bg-blue-700 transition duration-300">Read More</a>
+                    </div>
+                    <div class="card-footer bg-white border-t border-gray-200 pt-3 text-sm text-gray-500">
+                        <small>Published on July 2, 2025</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post Card 4 -->
+            <div class="col">
+                <div class="card h-100 p-4 rounded-xl">
+                    <img src="https://placehold.co/600x400/CCE5FF/007BFF?text=Blog+Image+4" class="card-img-top rounded-lg mb-3" alt="Blog Image 4">
+                    <div class="card-body flex flex-col justify-between">
+                        <h5 class="card-title text-2xl font-semibold text-gray-900 mb-2">The Future of AI</h5>
+                        <p class="card-text text-gray-700 mb-4">Dive into the advancements of artificial intelligence and its potential impact on society, technology, and everyday life.</p>
+                        <a href="#" class="btn btn-primary w-full rounded-md py-2 px-4 text-center text-white font-medium hover:bg-blue-700 transition duration-300">Read More</a>
+                    </div>
+                    <div class="card-footer bg-white border-t border-gray-200 pt-3 text-sm text-gray-500">
+                        <small>Published on July 1, 2025</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post Card 5 -->
+            <div class="col">
+                <div class="card h-100 p-4 rounded-xl">
+                    <img src="https://placehold.co/600x400/FFF3CD/FFC107?text=Blog+Image+5" class="card-img-top rounded-lg mb-3" alt="Blog Image 5">
+                    <div class="card-body flex flex-col justify-between">
+                        <h5 class="card-title text-2xl font-semibold text-gray-900 mb-2">Healthy Living Guide</h5>
+                        <p class="card-text text-gray-700 mb-4">Embrace a healthier lifestyle with practical tips on nutrition, exercise, and mental well-being for a balanced and fulfilling life.</p>
+                        <a href="#" class="btn btn-primary w-full rounded-md py-2 px-4 text-center text-white font-medium hover:bg-blue-700 transition duration-300">Read More</a>
+                    </div>
+                    <div class="card-footer bg-white border-t border-gray-200 pt-3 text-sm text-gray-500">
+                        <small>Published on June 30, 2025</small>
+                    </div>
+                </div>
+            
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 mt-5 shadow-inner">
+        <div class="container text-center">
+            <p class="mb-0 text-gray-300">&copy; 2025 My Blog. All rights reserved.</p>
+            
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+             </div>
+    </footer>
+</body>
+</html>
